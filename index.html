@@ -1,73 +1,169 @@
 <!DOCTYPE html>
-<html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+
 <head>
-	<title>Shimul Tech Tips Github Website</title>
-	  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
-	 	<style>
-		body {
-			background-color: black;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 100vh;
-			margin: 0;
-			font-family: 'Courier New', Courier, monospace;
-			font-size: 24px;
-			color: #00FF00;
-			position: relative;
-		}
-		
-		#hello {
-			position: relative;
-			animation: typing 4s steps(20) forwards;
-		}
-		
-		#hello::after {
-			content: "|";
-			position: absolute;
-			right: -8px;
-			top: 0;
-			animation: cursor 1s infinite;
-		}
-
-		#clock {
-			position: absolute;
-			top: 10px;
-			right: 10px;
-			font-size: 14px;
-			color: #FFF;
-		}
-
-		@keyframes typing {
-			from { width: 0 }
-			to { width: 100% }
-		}
-		
-		@keyframes cursor {
-			from, to {
-				opacity: 1;
-			}
-			50% {
-				opacity: 0;
-			}
-		}
-	</style>
-	<script>
-		function updateClock() {
-			const now = new Date();
-			const timezoneOffset = -360; // Bangladesh timezone offset in minutes from UTC
-			const localTime = new Date(now.getTime() + timezoneOffset * 60 * 1000);
-			const hours = localTime.getHours();
-			const minutes = localTime.getMinutes();
-			const seconds = localTime.getSeconds();
-			const timeString = hours.toString().padStart(2, '0') + ':' + minutes.toString().padStart(2, '0') + ':' + seconds.toString().padStart(2, '0');
-			document.getElementById('clock').textContent = timeString;
-		}
-		setInterval(updateClock, 1000);
-	</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shimul Hossain's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/8bdd3dea34.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-	<p><span id="greetings">This Website Is Under Maintenance....</span></p>
-	<div id="clock"></div>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="#">Shimul Hossain</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#" class="menu-active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="navbar-gap"></div>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about dp-flex">
+        <img class="myImage" src="./images/profile.jpg" alt="profile image" />
+        <div class="aboutMe">
+          <h1 class="greetings">As Salamu Alaikum :)</h1>
+          <h2 class="name">My Name Is Md. Shimul Hossain</h2>
+          <p class="aboutPara">Welcome To My Portfolio. I'm A Web Developer, Working From Home. I Live In Pabna,
+            Bangladesh. My Passion Is To Learn New Things Every Moment. That Is Why I've Choosen To Be A Full Stack Web
+            Developer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Div -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <h2 class="headings">My Skills On Different Technologies:</h2>
+
+      <div class="skills-inner-container dp-flex">
+        <div class="skills-container">
+          <div class="skills html">HTML 90%</div>
+        </div>
+
+        <div class="skills-container">
+          <div class="skills css">CSS 80%</div>
+        </div>
+
+        <div class="skills-container">
+          <div class="skills js">JS 65%</div>
+        </div>
+      </div>
+      <div class="skills-inner-container dp-flex">
+        <div class="skills-container">
+          <div class="skills react">React 85%</div>
+        </div>
+
+        <div class="skills-container">
+          <div class="skills mdb">MDB 80%</div>
+        </div>
+
+        <div class="skills-container">
+          <div class="skills node">Node 70%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="projects-items dp-flex">
+        <h2 class="headings">My Recent Projects :</h2>
+        <div class="cards dp-flex">
+          <div class="dp-flex card">
+            <img class="card-img" src="./images/demo-img.jpg" alt="project image" />
+            <a href="#">
+              <h2 class="card-title">Project Name</h2>
+            </a>
+            <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae reiciendis deserunt
+              fugiat
+              provident culpa iure perspiciatis ea possimus expedita animi illo, voluptas molestiae officia aut!</p>
+          </div>
+
+          <div class="dp-flex card">
+            <img class="card-img" src="./images/demo-img.jpg" alt="project image" />
+            <a href="#">
+              <h2 class="card-title">Project Name</h2>
+            </a>
+            <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae reiciendis deserunt
+              fugiat
+              provident culpa iure perspiciatis ea possimus expedita animi illo, voluptas molestiae officia aut!</p>
+          </div>
+
+          <div class="dp-flex card">
+            <img class="card-img" src="./images/demo-img.jpg" alt="project image" />
+            <a href="#">
+              <h2 class="card-title">Project Name</h2>
+            </a>
+            <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae reiciendis deserunt
+              fugiat
+              provident culpa iure perspiciatis ea possimus expedita animi illo, voluptas molestiae officia aut!</p>
+          </div>
+
+        </div>
+        <a class="btn" href="#projects">More Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="education-section" id="education">
+    <div class="container">
+      <div class="education">
+        <h2 class="headings">My Educations :</h2>
+        <h3 class="session">2020-2024 :</h3>
+        <p>I've Been Into Pabna Polytechnic Institute, Pabna. Stydying Diploma In Computer Technology Since 2020.</p>
+        <h3 class="session">2016-2018</h3>
+        <p>I've Been Into Shahid M Monsur Ali College, Pabna. Stydying Higher Secondery Since 2016.</p>
+        <h3 class="session">2013-2016</h3>
+        <p>I've Been Into R. M. Academy School And College, Pabna. Stydying Secondery Since 2013.</p>
+        <h3 class="session">2011-2013</h3>
+        <p>I've Been Into R. M. Academy School And College, Pabna. Stydying For JSC Exam Since 2011.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 class="headings">Contact With Me :</h2>
+      <form action="action_page.php">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit" class="sub-btn">
+    
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy;2024 By Shimul Hossain</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::selection {
+  background: rgb(0, 123, 255, 0.3);
+
+}
+
+body {
+  background-color: #313131;
+  color: white;
+}
+
+.content {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0px 30px;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+
+  background-color: #1b1b1b;
+}
+
+.navbar.sticky {
+  padding: 10px 0;
+  background: #1b1b1b;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar .menu-list {
+  display: inline-flex;
+}
+
+.menu-list li {
+  list-style: none;
+}
+
+.menu-list li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.navbar-gap {
+  height: 100px;
+}
+
+.icon {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.icon.cancel-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.navbar.sticky .icon.cancel-btn {
+  top: 10px;
+}
+
+.menu-active {
+  color: #0ee921 !important;
+  pointer-events: none;
+  cursor: default;
+}
+
+.menu-list li a:hover {
+  color: #007bff;
+}
+
+/* Skills CSS */
+.skills-section {
+  background-color: #242424;
+}
+
+.skills-inner-container {
+  margin-bottom: 30px;
+}
+
+.skills-container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.html {
+  width: 90%;
+  background-color: #04AA6D;
+}
+
+.css {
+  width: 80%;
+  background-color: #2196F3;
+}
+
+.js {
+  width: 65%;
+  background-color: #f44336;
+}
+
+.react {
+  width: 85%;
+  background-color: #8904aa;
+}
+
+.mdb {
+  width: 80%;
+  background-color: #4821f3;
+}
+
+.node {
+  width: 70%;
+  background-color: #f4368f;
+}
+
+/* My CSS */
+
+.dp-flex {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.headings {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 40px;
+}
+
+.btn {
+  background-color: #007bff;
+  max-width: 250px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  border-radius: 10px;
+  border: 0;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+}
+
+.projects-items {
+  flex-direction: column;
+}
+
+.myImage {
+  border-radius: 50%;
+  max-width: 380px;
+  width: 100%;
+}
+
+.greetings {
+  font-size: 45px;
+  color: #fbff00
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.name {
+  font-size: 30px;
+}
+
+/* Projects Section */
+.cards {
+  flex-wrap: wrap;
+}
+
+.card {
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 350px;
+  width: 100%;
+  padding: 10px;
+  gap: 20px;
+  background-color: #2a2a2b;
+  border-radius: 10px
+}
+
+.card a {
+  text-decoration: none;
+  color: white;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 50%;
+
+}
+
+/* Education Section */
+.education-section{
+  background-color: #242424;
+}
+
+.session{
+  font-size: 20px;
+}
+
+/* Contact CSS */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Contact CSS */
+
+.sub-btn{
+  pointer-events: none;
+  cursor: default;
+}
+
+/* Footer CSS */
+footer {
+  padding: 15px;
+  font-size: 25px;
+  text-align: center;
+  background-color: #1B1B1B;
+}
+
+@media (max-width: 992px) {
+  body.disabledScroll {
+    overflow: hidden;
+  }
+
+  .icon {
+    display: block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    z-index: 9;
+  }
+
+  .icon.cancel-btn {
+    display: none;
+  }
+
+  .icon.cancel-btn.show {
+    display: block;
+  }
+
+  .icon.hide {
+    display: none;
+  }
+
+  .navbar .menu-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #222;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 50px));
+    transition: all 0.3s ease;
+  }
+
+  .navbar.sticky .menu-list {
+    clip-path: circle(25px at calc(100% - 55px) calc(0% + 35px));
+  }
+
+  .navbar .menu-list.active {
+    clip-path: circle(75%);
+  }
+
+  .navbar .menu-list li {
+    margin-top: 45px;
+  }
+
+  .navbar .menu-list li a {
+    font-size: 23px;
+  }
+}
+
+@media (max-width:768px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .skills-inner-container {
+    flex-direction: column;
+    font-size: 25px;
+  }
+}
